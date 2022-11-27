@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </style>
+</head>
+<body>
+
+  <div class="title">
+    <h2>CS858 (Fall 2022) - Empirical Usability Study Of Transliterated Passphrases</h2>
+  </div>
+
+<html>
+  <header></header>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <!-- Below is the additional script for Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+          apiKey: "AIzaSyCZgHmAHfzBR8KdNIlzmBAxvtA0N4cD2vY",
+          authDomain: "romit-18f7c.firebaseapp.com",
+          projectId: "romit-18f7c",
+          storageBucket: "romit-18f7c.appspot.com",
+          messagingSenderId: "416415891647",
+          appId: "1:416415891647:web:1db2362509120a5f30c60a",
+          measurementId: "G-8XVCTH32JT"
+        };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const database = firebase.database();
+    </script>
+
+<p></p>
+
+<form id="my-form" action="">
+  <label for="email"><b>Email</b></label>
+  <input type="email" id="email" placeholder="Enter Email Address" />
+  <br>
+  <label for="password"><b>Password</b></label>
+  <input type="password" id="password" placeholder="Enter Password"/>
+  <br>
+  <!-- An element to toggle between password visibility -->
+  <input type="checkbox" onclick="myFunction()">Show Password
+  <br>
+  <br>
+  <span id = "message"> </span> <br><br>
+  <button id="signup-btn"><b>Sign Up</b></button>
+  <button id="login-btn"><b>Login</b></button>
+  <button id="logout-btn"><b>Logout</b></button>
+  <button id="reset-btn"><b>Forgot Password</b></button>
+</form>
+
+<form id="text-form" action="">
+  <li>
+    <p>If you need to reset your password, kindly send an email to "s4an@uwaterloo.ca"</p>
+  </li>
+</form>
+
+
+<script type="text/javascript"
+         src="{{ url_for('static', filename='main.js') }}"></script>
+
+
+</body>
+</html>
