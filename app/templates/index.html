@@ -55,14 +55,58 @@
 </form>
 
 <form id="text-form" action="">
-  <li>
-    <p>If you need to reset your password, kindly send an email to "s4an@uwaterloo.ca"</p>
-  </li>
+    <p>If you need to reset your password, please send an email to "s4an@uwaterloo.ca"</p>
 </form>
 
 
+<!-- new -->
+<button class="collapsible">Objective of the study</button>
+<div class="content">
+  <p>Analyzing password strength has been the focus of recent research considering how passwords continue to be the dominant method for authentication. Strong passwords like random strings are challenging to remember, whereas memorable passwords are simple to crack. 
+    In this work, we propose a novel approach to generate memorable passphrases for multilingual users. 
+    <br> <br>
+    This user study is being conducted to determine the usability of passphrases created using <a href="https://en.wikipedia.org/wiki/Romanization">romanized</a> forms of non-english words and gauge the participants' perception of the security of this approach. 
+    </p>
+</div>
+<button class="collapsible">Instructions for the study</button>
+<div class="content">
+  <p>We have set up a dummy signup/login webpage with minimal account registration and login functionalities. We request participants of the study to visit this login page for five days (November 28th – December 2nd)  to authenticate themselves at least once per day. While creating passphrases, we request the participants to follow these rules:</p>
+  <ul>
+    <li><b>Rule 1 : Use a passphrase of minimum word count “4”</b>
+      <br>
+      <p>A passphrase is a string of words. For instance, twoboysplayingwithball. This passphrase has 5 words: ‘Two’, ‘boys’, ‘playing’, ‘with’, and ‘ball’. Users are requested to use at least 4 words for their passphrases. </p>
+    </li>
+
+    <li><b>Rule 2 : Use words from non-English languages to form your passphrases</b>
+      <br>
+      <p>Our idea assumes that the participant is at least bilingual or has some means of querying romanizations of non-English words. Please use romanized form of your chosen passphrase for authentication. 
+        In Hindi, “Two” is “do”, “boys” is ‘ladke’, ‘playing’ is ‘khelte’, ‘with ball’ is ‘gend ke saath’. Therefore, our example English passphrase ‘twoboysplayingwithball’ when romanised, becomes ‘doladkekheltegendkesath’. 
+        <br>
+        These phrases need not make sense. They can even be a set of random words. Multilingual participants can use words from more than one non-English language to create a passphrase. 
+        <br> Example: If a participant knows Hindi, Punjabi, and Gujarati, their passphrase could be ‘Kaise_ho?bdiya@majama’. 
+      </p>
+    </li>
+
+    <li><b>Rule 3 : Use special characters as separators or leet</b>
+      <br>
+      <p>Special characters include characters like “@”, “$”, “%”, “*” etc. Previous studies have proven that using special characters in passphrases makes them more secure and harder to crack. Participants are requested to use at least 3 special characters in their passphrase either as separators or <a href="https://en.wikipedia.org/wiki/Leet">leet</a>. 
+        <br> Example: ‘Kaise_ho?bdiya@majama’ or ‘d0l@dkekheltegendkes@th’</p>
+    </li>
+  </ul>
+</div>
+<button class="collapsible">Disclaimer</button>
+<div class="content">
+  <p>When designing and executing our research, we take all necessary steps to ensure that personal information you provide is processed fairly and lawfully. All of the information that you provide will be treated as confidential and will only be used for research purposes. Your comments will not be identified as belonging to you, instead they will be combined with those gathered from other survey participants, and will be analysed as part of a group. We do not use any of the information you provide for direct marketing or other non-research activities. Your participation is voluntary. You are entitled to ask that part, or all, of the record of your involvement in the survey be deleted or destroyed.
+    <br>
+  </p>
+</div>
+
+<h2>For any queries, issues or concerns about the study/survey, please email s4an@uwaterloo.ca or a3kaur@uwaterloo.ca
+</h2>
+
 <script type="text/javascript"
-         src="{{ url_for('static', filename='main.js') }}"></script>
+         src="{{ url_for('static', filename='main.js') }}">    
+</script>
 
 
 </body>
